@@ -1,0 +1,29 @@
+
+<section class="hero is-medium is-danger">
+  <div class="hero-head">
+    <header class="navbar">
+      <div class="navbar-brand">
+        <h1 class="navbar-item is-size-4 has-text-white " >Beechmont Tavern</h1>
+        <span class="navbar-burger burger" data-target="#nav">
+          <span></span>
+            <span></span>
+            <span></span>
+          </span>
+      </div>
+
+      <!--To Do Get The Burger to Work-->
+      <div class="navbar-menu" id="nav">
+        <div class="navbar-end">
+          <%= link_to "Home", root_url, class: "navbar-item" %>
+          <%= link_to "Customers", customers_url, class: "navbar-item" %>
+          <%= link_to "Orders", "#", class: "navbar-item" %>
+          <span class="navbar-item">
+              <a class="button is-dark is-inverted">
+                <span>Log Out</span>
+              </a>
+            </span>
+        </div>
+      </div>
+    </header>
+  </div>
+</section>
