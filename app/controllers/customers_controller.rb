@@ -1,5 +1,7 @@
 class CustomersController < ApplicationController
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
+  protect_from_forgery except: :new
+  protect_from_forgery except: :create
 
   # GET /customers
   # GET /customers.json
